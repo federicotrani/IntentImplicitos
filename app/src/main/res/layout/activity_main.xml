@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/prueba"
+    tools:context="com.example.ftrani.intent_implicito.MainActivity">
+
+
+    <Button
+        android:id="@+id/btnTelefono"
+        style="@style/boton_comun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:onClick="marcarLlamada"
+        android:text="telefono"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnSms" />
+
+    <Button
+        android:id="@+id/btnSms"
+        style="@style/boton_comun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnEmail"
+        android:layout_below="@+id/btnTelefono"
+        android:layout_marginTop="34dp"
+        android:onClick="enviarSms"
+        android:text="sms" />
+
+    <Button
+        android:id="@+id/btnEmail"
+        style="@style/boton_comun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSms"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:onClick="enviarEmail"
+        android:text="Email" />
+
+    <Button
+        android:id="@+id/btnCerrar"
+        style="@style/boton_comun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="cerrarApp"
+        android:text="cerrar" />
+
+</RelativeLayout>
