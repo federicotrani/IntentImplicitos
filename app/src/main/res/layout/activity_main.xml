@@ -13,7 +13,7 @@
         style="@style/boton_comun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="62dp"
+        android:layout_marginTop="38dp"
         android:onClick="marcarLlamada"
         android:text="telefono"
         android:layout_alignParentTop="true"
@@ -24,22 +24,22 @@
         style="@style/boton_comun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/btnEmail"
-        android:layout_below="@+id/btnTelefono"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="17dp"
         android:onClick="enviarSms"
-        android:text="sms" />
+        android:text="sms"
+        android:layout_below="@+id/btnTelefono"
+        android:layout_alignStart="@+id/btnEmail" />
 
     <Button
         android:id="@+id/btnEmail"
         style="@style/boton_comun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btnSms"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="19dp"
         android:onClick="enviarEmail"
-        android:text="Email" />
+        android:text="@string/email"
+        android:layout_below="@+id/btnSms"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/btnCerrar"
@@ -49,6 +49,17 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:onClick="cerrarApp"
-        android:text="cerrar" />
+        android:text="@string/btn_cerrar" />
+
+    <Button
+        android:id="@+id/btnMapa"
+        style="@style/boton_comun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnEmail"
+        android:layout_below="@+id/btnEmail"
+        android:layout_marginTop="27dp"
+        android:onClick="mostrarMapa"
+        android:text="Mapa" />
 
 </RelativeLayout>

@@ -2,8 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ftrani.intent_implicito">
 
-    <uses-permission android:name="android.permission.CALL_PHONE" />
-
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -24,8 +23,11 @@
         <activity
             android:name=".SmsActivity"
             android:label="@string/label_sms" />
-        <activity android:name=".EmailActivity"
-            android:label="@string/label_email"></activity>
+        <activity
+            android:name=".EmailActivity"
+            android:label="@string/label_email" />
+        <activity android:name=".MapaActivity"
+            android:label="MAPAS"></activity>
     </application>
 
 </manifest>

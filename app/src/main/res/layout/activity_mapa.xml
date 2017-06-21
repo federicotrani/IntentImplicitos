@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ftrani.intent_implicito.MapaActivity">
+
+    <Button
+        android:id="@+id/btnMostrarMapa"
+        style="@style/boton_comun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="153dp"
+        android:text="Mostrar" />
+
+    <Button
+        android:id="@+id/btnCerrarMapa"
+        style="@style/boton_comun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/btn_cerrar" />
+
+    <EditText
+        android:id="@+id/edtLatitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnMostrarMapa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="111dp"
+        android:ems="10"
+        android:hint="Ingrese Latitud"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edtLongitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnMostrarMapa"
+        android:layout_alignEnd="@+id/edtLatitud"
+        android:layout_marginBottom="46dp"
+        android:ems="10"
+        android:hint="Ingrese Longitud"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edtLatitud"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:text="Geolocalización"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</RelativeLayout>

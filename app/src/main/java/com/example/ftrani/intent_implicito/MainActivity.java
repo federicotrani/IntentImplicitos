@@ -28,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void mostrarMapa(View v){
+        Intent intent = new Intent(this, MapaActivity.class);
+        startActivity(intent);
+    }
 
 
     public void cerrarApp(View v){

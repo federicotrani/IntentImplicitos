@@ -30,7 +30,7 @@ public class EmailActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 //variables para llamar metodo de envio de mail
-                String[] email  = {edtEmail.getText().toString()}  ;
+                String[] email  = {edtEmail.getText().toString(),"juan@gmail.com","maria@gmail.com"}  ;
                 String asunto = edtAsunto.getText().toString();
                 String mensaje = edtMensaje.getText().toString();
 
@@ -41,7 +41,7 @@ public class EmailActivity extends AppCompatActivity {
     }
 
     private void enviarEmail(String[] email, String asunto, String mensaje){
-        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        Intent intent = new Intent(Intent.ACTION_DIAL);
         intent.setType("*/*");
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
         intent.putExtra(Intent.EXTRA_EMAIL, email);
